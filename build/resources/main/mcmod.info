@@ -1,0 +1,10 @@
+[
+  {
+    "modid": "autochristmasmessage",
+    "name": "Auto Christmas Message",
+    "version": "1.0",
+    "description": "Sends 'Merry Christmas everyone :D' every 10 minutes automatically!",
+    "mcversion": "1.8.9",
+    "authorList": ["Chills"]
+  }
+]

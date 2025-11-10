@@ -1,0 +1,116 @@
+Symbol range map extraction starting
+Processing 1 files
+processing com/example/christmasmod/AutoChristmasMessage.java
+@|com/example/christmasmod/AutoChristmasMessage.java|8|32|com.example.christmasmod|package|com.example.christmasmod|(file)
+Class Start: com.example.christmasmod.AutoChristmasMessage
+   @|com/example/christmasmod/AutoChristmasMessage.java|648|654|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|655|660|MODID|field|com.example.christmasmod.AutoChristmasMessage|MODID|
+   @|com/example/christmasmod/AutoChristmasMessage.java|711|717|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|718|725|VERSION|field|com.example.christmasmod.AutoChristmasMessage|VERSION|
+   @|com/example/christmasmod/AutoChristmasMessage.java|759|765|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|766|770|NAME|field|com.example.christmasmod.AutoChristmasMessage|NAME|
+   @|com/example/christmasmod/AutoChristmasMessage.java|825|834|Minecraft|class|net.minecraft.client.Minecraft
+   @|com/example/christmasmod/AutoChristmasMessage.java|835|837|mc|field|com.example.christmasmod.AutoChristmasMessage|mc|
+   @|com/example/christmasmod/AutoChristmasMessage.java|840|849|Minecraft|class|net.minecraft.client.Minecraft
+   @|com/example/christmasmod/AutoChristmasMessage.java|850|862|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+   @|com/example/christmasmod/AutoChristmasMessage.java|891|897|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|898|906|FILENAME|field|com.example.christmasmod.AutoChristmasMessage|FILENAME|
+   @|com/example/christmasmod/AutoChristmasMessage.java|962|984|TICKS_BETWEEN_MESSAGES|field|com.example.christmasmod.AutoChristmasMessage|TICKS_BETWEEN_MESSAGES|
+   @|com/example/christmasmod/AutoChristmasMessage.java|1027|1033|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|1036|1044|messages|field|com.example.christmasmod.AutoChristmasMessage|messages|
+   @|com/example/christmasmod/AutoChristmasMessage.java|1051|1057|String|class|java.lang.String
+   @|com/example/christmasmod/AutoChristmasMessage.java|1078|1090|messageIndex|field|com.example.christmasmod.AutoChristmasMessage|messageIndex|
+   @|com/example/christmasmod/AutoChristmasMessage.java|1112|1123|tickCounter|field|com.example.christmasmod.AutoChristmasMessage|tickCounter|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1168|1175|preInit|method|com.example.christmasmod.AutoChristmasMessage|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1176|1201|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/example/christmasmod/AutoChristmasMessage.java|1202|1207|event|param|com.example.christmasmod.AutoChristmasMessage|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com/example/christmasmod/AutoChristmasMessage.java|1219|1239|loadOrCreateMessages|method|com.example.christmasmod.AutoChristmasMessage|loadOrCreateMessages|()V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1288|1292|init|method|com.example.christmasmod.AutoChristmasMessage|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1293|1315|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/example/christmasmod/AutoChristmasMessage.java|1316|1321|event|param|com.example.christmasmod.AutoChristmasMessage|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com/example/christmasmod/AutoChristmasMessage.java|1333|1373|net.minecraftforge.common.MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/example/christmasmod/AutoChristmasMessage.java|1374|1383|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/example/christmasmod/AutoChristmasMessage.java|1384|1392|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: loadOrCreateMessages()V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1424|1444|loadOrCreateMessages|method|com.example.christmasmod.AutoChristmasMessage|loadOrCreateMessages|()V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1457|1461|File|class|java.io.File
+      @|com/example/christmasmod/AutoChristmasMessage.java|1473|1477|File|class|java.io.File
+      @|com/example/christmasmod/AutoChristmasMessage.java|1478|1480|mc|field|com.example.christmasmod.AutoChristmasMessage|mc
+      @|com/example/christmasmod/AutoChristmasMessage.java|1481|1490|mcDataDir|field|net.minecraft.client.Minecraft|mcDataDir
+      @|com/example/christmasmod/AutoChristmasMessage.java|1492|1500|FILENAME|field|com.example.christmasmod.AutoChristmasMessage|FILENAME
+      @|com/example/christmasmod/AutoChristmasMessage.java|1522|1528|exists|method|java.io.File|exists|()Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|1546|1557|PrintWriter|class|java.io.PrintWriter
+      @|com/example/christmasmod/AutoChristmasMessage.java|1613|1626|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/example/christmasmod/AutoChristmasMessage.java|1629|1635|exists|method|java.io.File|exists|()Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|1644|1657|getParentFile|method|java.io.File|getParentFile|()Ljava/io/File;
+      @|com/example/christmasmod/AutoChristmasMessage.java|1660|1666|mkdirs|method|java.io.File|mkdirs|()Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|1695|1706|PrintWriter|class|java.io.PrintWriter
+      @|com/example/christmasmod/AutoChristmasMessage.java|1711|1721|FileWriter|class|java.io.FileWriter
+      @|com/example/christmasmod/AutoChristmasMessage.java|1749|1756|println|method|java.io.PrintWriter|println|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1808|1815|println|method|java.io.PrintWriter|println|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1844|1851|println|method|java.io.PrintWriter|println|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1898|1909|IOException|class|java.io.IOException
+      @|com/example/christmasmod/AutoChristmasMessage.java|1931|1937|System|class|java.lang.System
+      @|com/example/christmasmod/AutoChristmasMessage.java|1938|1941|err|field|java.lang.System|err
+      @|com/example/christmasmod/AutoChristmasMessage.java|1942|1949|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|1982|1990|FILENAME|field|com.example.christmasmod.AutoChristmasMessage|FILENAME
+      @|com/example/christmasmod/AutoChristmasMessage.java|2002|2012|getMessage|method|java.lang.Throwable|getMessage|()Ljava/lang/String;
+      @|com/example/christmasmod/AutoChristmasMessage.java|2076|2081|close|method|java.lang.AutoCloseable|close|()V
+      @|com/example/christmasmod/AutoChristmasMessage.java|2118|2122|List|class|java.util.List
+      @|com/example/christmasmod/AutoChristmasMessage.java|2123|2129|String|class|java.lang.String
+      @|com/example/christmasmod/AutoChristmasMessage.java|2142|2151|ArrayList|class|java.util.ArrayList
+      @|com/example/christmasmod/AutoChristmasMessage.java|2152|2158|String|class|java.lang.String
+      @|com/example/christmasmod/AutoChristmasMessage.java|2171|2185|BufferedReader|class|java.io.BufferedReader
+      @|com/example/christmasmod/AutoChristmasMessage.java|2232|2246|BufferedReader|class|java.io.BufferedReader
+      @|com/example/christmasmod/AutoChristmasMessage.java|2251|2261|FileReader|class|java.io.FileReader
+      @|com/example/christmasmod/AutoChristmasMessage.java|2282|2288|String|class|java.lang.String
+      @|com/example/christmasmod/AutoChristmasMessage.java|2325|2333|readLine|method|java.io.BufferedReader|readLine|()Ljava/lang/String;
+      @|com/example/christmasmod/AutoChristmasMessage.java|2376|2380|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|com/example/christmasmod/AutoChristmasMessage.java|2410|2417|isEmpty|method|java.lang.String|isEmpty|()Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|2426|2429|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|2468|2479|IOException|class|java.io.IOException
+      @|com/example/christmasmod/AutoChristmasMessage.java|2497|2503|System|class|java.lang.System
+      @|com/example/christmasmod/AutoChristmasMessage.java|2504|2507|err|field|java.lang.System|err
+      @|com/example/christmasmod/AutoChristmasMessage.java|2508|2515|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|2546|2554|FILENAME|field|com.example.christmasmod.AutoChristmasMessage|FILENAME
+      @|com/example/christmasmod/AutoChristmasMessage.java|2566|2576|getMessage|method|java.lang.Throwable|getMessage|()Ljava/lang/String;
+      @|com/example/christmasmod/AutoChristmasMessage.java|2638|2643|close|method|java.lang.AutoCloseable|close|()V
+      @|com/example/christmasmod/AutoChristmasMessage.java|2656|2667|IOException|class|java.io.IOException
+      @|com/example/christmasmod/AutoChristmasMessage.java|2702|2709|isEmpty|method|java.util.Collection|isEmpty|()Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|2732|2735|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|2785|2788|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/example/christmasmod/AutoChristmasMessage.java|2817|2825|messages|field|com.example.christmasmod.AutoChristmasMessage|messages
+      @|com/example/christmasmod/AutoChristmasMessage.java|2833|2840|toArray|method|java.util.Collection|toArray|([Ljava/lang/Object;)[Ljava/lang/Object;
+      @|com/example/christmasmod/AutoChristmasMessage.java|2845|2851|String|class|java.lang.String
+   Method End: loadOrCreateMessages()V
+   Method Start: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|2900|2912|onClientTick|method|com.example.christmasmod.AutoChristmasMessage|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|2913|2938|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|com/example/christmasmod/AutoChristmasMessage.java|2939|2944|event|param|com.example.christmasmod.AutoChristmasMessage|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com/example/christmasmod/AutoChristmasMessage.java|2960|2962|mc|field|com.example.christmasmod.AutoChristmasMessage|mc
+      @|com/example/christmasmod/AutoChristmasMessage.java|2963|2972|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com/example/christmasmod/AutoChristmasMessage.java|2984|2986|mc|field|com.example.christmasmod.AutoChristmasMessage|mc
+      @|com/example/christmasmod/AutoChristmasMessage.java|2987|2995|theWorld|field|net.minecraft.client.Minecraft|theWorld
+      @|com/example/christmasmod/AutoChristmasMessage.java|3025|3033|messages|field|com.example.christmasmod.AutoChristmasMessage|messages
+      Field: Array Length, skipping
+      @|com/example/christmasmod/AutoChristmasMessage.java|3064|3075|tickCounter|field|com.example.christmasmod.AutoChristmasMessage|tickCounter
+      @|com/example/christmasmod/AutoChristmasMessage.java|3091|3102|tickCounter|field|com.example.christmasmod.AutoChristmasMessage|tickCounter
+      @|com/example/christmasmod/AutoChristmasMessage.java|3106|3128|TICKS_BETWEEN_MESSAGES|field|com.example.christmasmod.AutoChristmasMessage|TICKS_BETWEEN_MESSAGES
+      @|com/example/christmasmod/AutoChristmasMessage.java|3144|3146|mc|field|com.example.christmasmod.AutoChristmasMessage|mc
+      @|com/example/christmasmod/AutoChristmasMessage.java|3147|3156|thePlayer|field|net.minecraft.client.Minecraft|thePlayer
+      @|com/example/christmasmod/AutoChristmasMessage.java|3157|3172|sendChatMessage|method|net.minecraft.client.entity.EntityPlayerSP|sendChatMessage|(Ljava/lang/String;)V
+      @|com/example/christmasmod/AutoChristmasMessage.java|3173|3181|messages|field|com.example.christmasmod.AutoChristmasMessage|messages
+      @|com/example/christmasmod/AutoChristmasMessage.java|3182|3194|messageIndex|field|com.example.christmasmod.AutoChristmasMessage|messageIndex
+      @|com/example/christmasmod/AutoChristmasMessage.java|3210|3222|messageIndex|field|com.example.christmasmod.AutoChristmasMessage|messageIndex
+      @|com/example/christmasmod/AutoChristmasMessage.java|3226|3238|messageIndex|field|com.example.christmasmod.AutoChristmasMessage|messageIndex
+      @|com/example/christmasmod/AutoChristmasMessage.java|3246|3254|messages|field|com.example.christmasmod.AutoChristmasMessage|messages
+      Field: Array Length, skipping
+      @|com/example/christmasmod/AutoChristmasMessage.java|3275|3286|tickCounter|field|com.example.christmasmod.AutoChristmasMessage|tickCounter
+   Method End: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+Class End  : com.example.christmasmod.AutoChristmasMessage
+endProcessing com/example/christmasmod/AutoChristmasMessage.java
+
